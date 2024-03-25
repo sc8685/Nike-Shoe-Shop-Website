@@ -1,0 +1,179 @@
+<!--Most of the code is reused code from my WM2 final project-->
+
+<!DOCTYPE html>
+<html class="" lang="en">
+
+
+<head>
+  
+  <meta charset="UTF-8">
+  <!--Modernizr script for browser support-->
+  <script src="js/modernizr.js"></script>
+  <!-- Linking font and stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+
+
+  <!-- Favicon link -->
+  <link rel="icon" href="./media/tablog.png" type="image/x-icon">
+
+
+  <script src="js/app.js" type="module"></script>
+
+  <title>Nike</title>
+</head>
+
+<body>
+
+
+  <div id="overlaycontainer">
+  <p>Oops! It seems like your browser doesn't support some of the features required to run this website.
+  Please consider updating your browser or trying a different one to ensure full functionality.</p>
+  </div>
+
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <img class="navbar-logo" src="./media/nikelogo.png" alt="Nike Logo" height="50" width="50">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Our Products</a>
+    <a href="#shop">Shop</a>
+  </div>
+
+  <main>
+
+    <!-- Header Boxes -->
+    <div class="header-box home">
+      <div class="logo-container">
+        <h1 id="home">NIKE</h1>
+        <p>Just Do It.</p>
+      </div>
+    </div>
+
+    <div class="header-box about">
+      <h1 id="about">About Us</h1>
+
+      <!-- About Us Paragraphs -->
+      <div class="about-paragraph"></div>
+      <p>Welcome to Nike, where we're all about Nike shoes that blend performance and style.
+        We're not just a store - we're a team of enthusiasts who love helping every kind of
+        athlete, from casual runners to serious competitors. Our story began with a passion for excellence,
+        inspired by the iconic Nike brand. We've put together a collection that covers
+        the latest trends and timeless favorites.</p>
+
+      <p>Our goal is to fuel your potential. When you shop with us, it's not just about buying shoes;
+        it's about taking a step toward reaching your goals. We're here to make your
+        shopping experience easy and enjoyable, offering the newest releases and
+        innovations from Nike</p>
+
+      <p>Whether you're aiming for personal bests or just want to look good, Nike is your go-to for all
+        things Nike. So, lace up those shoes, step out, and start your journey with us!</p>
+    </div>
+
+
+    <div class="header-box our-products">
+      <h1 id="products">Our Products</h1>
+      <div class="half-box">
+        <!--Img and text container-->
+        <div class="img-and-text">
+          <!-- Left Product Image Container -->
+          <div class="img-container">
+            <img class="img1" src="./media/dunklow.webp" alt="Nike Dunk" width="775" height="400">
+          </div>
+          <!-- Left Product Description Container -->
+          <div class="container">
+            <p>
+              Introducing the ever-stylish Nike Customizable Low Dunks - a fusion of iconic design and personalized
+              flair.
+              These sneakers boast a classic silhouette that effortlessly combines comfort and trendsetting style.
+              Crafted for
+              durability and enduring appeal, the Low Dunks feature premium materials that stand the test of time. Now,
+              with the
+              customizable option, you can tailor every aspect to reflect your unique taste - from the vibrant color
+              palette to distinctive
+              materials. Step confidently into the world of Nike Low Dunks, where heritage meets individuality. Unleash
+              your creativity,
+              make a bold statement, and let your style shine. Embrace comfort and self-expression with Nike Low Dunks -
+              the epitome of
+              personalized style.</p>
+
+            <p>PRICE: 100$</p>
+
+          </div>
+        </div>
+
+        <!--Img and text container-->
+        <div class="img-and-text">
+          <div class="img-container">
+            <!-- Right Product Image Container -->
+            <img class="img1" src="./media/af1.jpg" alt="Nike AF1" width="775" height="400">
+          </div>
+
+          <!-- Right Product Description Container -->
+          <div class="container">
+            <p>
+              Introducing the timeless and iconic Nike Air Force 1's, now available with a personalized
+              touch through customization. Elevate your sneaker game with the classic silhouette that
+              seamlessly blends comfort and trendsetting design. Crafted for enduring style, these kicks feature a
+              premium build and unmatched durability. The customizable option allows you to tailor every detail to match
+              your unique
+              taste - from the iconic swoosh to the color palette. Step confidently into the world of
+              Nike Air Force 1's, where heritage meets individuality. Unleash your creativity, make a statement,
+              and let your style speak volumes. Step boldly into comfort and self-expression with Nike Air Force 1's -
+              your personalized stride.</p>
+            <p>PRICE: 100$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Shop Header box-->
+    <div class="header-box shop">
+      <h1 id="shop">Shop</h1>
+
+      <!-- Cascading Selects -->
+      <div class="select-container">
+
+        <!-- Form -->
+        <form class="myForm" id="myForm" action="form.html">
+
+          <!-- div for animal selects -->
+          <div id="div-selects" class="container-item">
+          </div>
+
+      </div>
+      <!-- Changing image -->
+      <div class="image-placeholder" id="div-shoe">
+        <img class="img2" id="shoeImage" src="./media/undefined-undefined-undefined.jpg" alt="Dunk and AF1" width="500"
+          height="300">
+      </div>
+
+
+      <!-- Reset and submit buttons -->
+      <div class="buttons-container">
+
+
+        <input class="submit-button" type="submit" value="Submit">
+
+
+      </div>
+      </form>
+
+    </div>
+
+  </main>
+
+  <!--Footer-->
+  <footer>&copy 2024 Stipe Čulina</footer>
+
+
+</body>
+
+</html>

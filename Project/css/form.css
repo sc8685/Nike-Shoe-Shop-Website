@@ -1,0 +1,75 @@
+/* Body CSS */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #282828; 
+  font-size: 20px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+/* Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+/* Error border */
+.error-border {
+  border: 4.5px solid red;
+  border-radius: 5px;
+}
+
+/* Error message */
+.error-message {
+  color: red; 
+  font-size: 16px; 
+  margin-top: 5px; 
+  font-style: italic; 
+  padding: 5px;
+}
+
+/* Legend */
+legend {
+  color: bisque;
+  font-size: 30px;
+}
+
+/* Fieldset */
+fieldset {
+  border-color: bisque;
+  border-radius: 5px ;
+  border-width: 6px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #27c312;
+}
+
+/* Buttons container */
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons-container input {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

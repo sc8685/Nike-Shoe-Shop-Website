@@ -1,0 +1,519 @@
+/*Most of the code is reused code from my WM2 final project*/
+
+
+/* Body CSS */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #282828; 
+  font-size: 20px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Changing paragraph color */
+p {
+  color: #4d4d4d;
+  padding: 10px;
+}
+
+/*h1 css*/
+h1{
+  color: #282828; /* White header text */
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+
+
+/*modernizr css*/
+[class*="no-"] #overlaycontainer {
+  display: flex;
+  
+}
+
+[class*="no-"] {
+  overflow: hidden;
+}
+#overlaycontainer {
+  background: red;
+    z-index: 1000;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  
+}
+
+#overlaycontainer p {
+  width: 61%; 
+  color: #f0f0f0;
+}
+
+/*footer CSS */
+footer {
+  background-color: #706a6a;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  padding: 10px; 
+  box-shadow: 0 -4px 8px rgba(200, 186, 186, 0.5); 
+  color: #f0f0f0; 
+}
+
+
+/* Navigation bar CSS */
+.navbar {
+  
+  background-color: #706a6a; 
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(200, 186, 186, 0.5);
+  
+  
+  
+}
+
+
+
+/*navbar logo css*/
+.navbar-logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+  padding-left: 15px;
+}
+
+
+
+.navbar a {
+  
+  font-size: 20px;
+  color: #f0f0f0; 
+  text-align: center;
+  padding: 18px 16px;
+  
+  text-decoration: none;
+  border-radius: 7px;
+  
+}
+
+.navbar a:hover {
+  background-color: #8c8c8c; 
+}
+
+/* Header Box CSS */
+.header-box {
+  background-color: #4d4d4d;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(239, 232, 232, 0.5);
+
+}
+
+.header-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Home box css*/
+.header-box.home {
+  background-image: url('../media/AF2.jpg');  
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.logo-container {
+  text-align: center;
+  
+}
+
+.header-box.home h1,
+.header-box.home p {
+  margin: 0;
+}
+
+.header-box.home h1 {
+  font-size: 80px;
+}
+
+.header-box.home p {
+  font-size: 20px;
+}
+
+.header-box.home h1, .header-box.home p{
+  color: #ffffff;
+  text-shadow: 7px 7px 7px #000000;
+}
+
+
+/*About box css*/
+.header-box.about {
+  background-image: url('../media/logo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.header-box.about p{
+  text-shadow: 2px 2px 2px #f0eded;
+  margin-top: -15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about-paragraph {
+  margin: 0; 
+  padding: 0; 
+}
+
+.header-box.about p {
+  text-align: justify; 
+  margin: 10px 0; 
+  line-height: 1.5; 
+  max-width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+ /*Adding shadwos and colors for differend items*/
+.header-box.our-products h1{
+  color: #f0eded;
+  text-shadow: 3px 3px 3px #000000;
+
+}
+
+
+.header-box.our-products p{
+  color: #4d4d4d;
+}
+
+
+
+.header-box.shop h1, .header-box.about h1{
+  text-shadow: 4px 4px 4px #cfc4c4;
+}
+
+
+
+.header-box p {
+  color: #4d4d4d; 
+  text-align: center;
+}
+
+/* CSS for two images */
+.img1{
+  max-width: 100%;
+  height: auto;
+  border-radius: 13%;
+  border: #998a8a 5px solid; 
+  margin-bottom: 15px; 
+  box-shadow: 0 4px 8px rgba(228, 223, 223, 0.5);
+  
+  
+  
+}
+
+
+.img2{
+  max-width: 100%;
+  height: auto;
+  border-radius: 13%;
+  border: #ebdede 5px solid; 
+  margin-bottom: 15px; 
+  box-shadow: 0 4px 8px rgba(83, 77, 77, 0.5);
+  
+  
+}
+
+
+/*Css for our products half box*/
+.half-box {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  
+  
+}
+
+.header-box.header-box.our-products p {
+  text-align: justify; 
+  margin: 10px 0; 
+  line-height: 1.5; 
+  max-width: 90%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*image and text left and right containers css*/
+.img-and-text {
+  width: calc(50% - 10px); 
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/*paragraph container css*/
+.container {
+  background-color: #f0eded; 
+  border-radius: 15px; 
+  padding: 10px; 
+  margin-bottom: 35px; 
+  margin-top: 20px;
+}
+
+/*container css*/
+.image-container {
+  margin-bottom: 15px; 
+}
+
+/*Shop box css*/
+.header-box.shop {
+  background-color: #f0eded; 
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+/*Cascading selects menu css*/
+.select-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  margin-bottom: 20px;
+  
+  
+  
+}
+
+/*selects css*/
+#div-selects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#div-selects select {
+  
+  width: 500px; 
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*changing image css*/
+.image-placeholder {
+  text-align: center;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*btn container css*/
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons-container input {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #8c8c8c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/*submit btn css*/
+.submit-button:hover{
+  background-color: #27c312;
+}
+
+.submit-button{
+  margin-top: 10px;
+  
+}
+
+
+
+
+
+
+/* Desktop media query*/
+@media (min-width: 1200px) {
+  
+
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-box img {
+    order: -1;
+  }
+
+  
+  
+
+  .img1,
+  .img2 {
+    
+    
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+  }
+
+  
+
+  
+  
+}
+
+/* Tablet media query*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 20px;
+    overflow-x: hidden;
+  }
+
+  main{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .header-box {
+    text-align: center;
+  }
+
+  .half-box {
+    flex-direction: row; 
+  }
+
+  .img-and-text {
+    width: calc(50% - 20px); 
+  }
+
+  .img1,
+  .img2 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%; 
+  }
+
+  
+
+  
+
+  .navbar a{
+    font-size: 18px;
+  }
+}
+
+/* Mobile media query*/
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+    font-size: 16px;
+  }
+
+  main{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .navbar a{
+    font-size: 14px;
+    padding: 14px 10px;
+   
+  }
+  
+  .header-box.about p {
+    
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-box {
+    text-align: center;
+  }
+
+  .half-box {
+    flex-direction: row; 
+  }
+
+  .img-and-text {
+    width: 100%;
+  }
+
+  .img1,
+  .img2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+    display: block;
+    max-width: 100%; 
+  }
+
+  #div-selects select {
+  
+    width: 300px; 
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .header-box.about p{
+    text-shadow: 2px 2px 2px #f0eded;
+    margin-top: -15px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
